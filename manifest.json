@@ -1,0 +1,14 @@
+{
+    "name": "YT Skip Ads",
+    "version": "1.0",
+    "description": "Chrome extension for skipping Youtube ads",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+    }],
+    "browser_action": {
+        "default_title": "YT Skip Ads"
+    },
+    "permissions": ["activeTab"]
+}
